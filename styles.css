@@ -186,6 +186,7 @@ body {
   padding-top: 20px;
   background: transparent;
   position: relative;
+  margin-bottom: -80px;
 }
 .nav-links {
   display: flex;
@@ -202,6 +203,68 @@ body {
 
 .nav-links a:hover {
   color: #a74ff7;
+}
+
+
+.dropdown_menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #1a0032;
+}
+.dropdown_menu ul{
+  display: block;
+  margin: 10px;
+}
+.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+li {
+  list-style-type: none;
+  padding-left: 0;
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a0032;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown button{
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #1a0032;
+  color: white;
+  font-size: 20px;
+  font-family: "extendapiupiu";
+  border: none; /* remove borda */
+  background: none; /* opcional, remove bg se quiser */
+  outline: none; /* remove borda ao focar */
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
