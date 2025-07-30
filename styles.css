@@ -290,4 +290,17 @@ li {
   .nav-links.active {
     display: flex;
   }
+  .card-text{
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .hero .bird {
+  position: absolute;
+  top: -75px;
+  left: -170px;
+  width: 500px;
+  }
+  .hero-text h1{
+    font-size: 70px;
+  }
 }
