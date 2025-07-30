@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,50 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robot One</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="navbar">
-  <div class="navbar-card">
-    <nav class="nav-links">
+    <div class="navbar-card">
+      <!-- Botão hambúrguer -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      
+      <nav class="nav-links" id="navLinks">
         <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Sobre nós</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="#content">Nossa história</a>
-              <a href="#intregantes">Integrantes</a>
-              <a href="#oficinas">Oficinas</a>
-              <a href="#contato">Contato</a>
+          <button class="dropdown-btn">Sobre nós ▼</button>
+          <div class="dropdown-content">
+            <a href="#content">Nossa história</a>
+            <a href="#integrantes">Integrantes</a>
+            <a href="#oficinas">Oficinas</a>
+            <a href="#contato">Contato</a>
           </div>
         </div>
-                <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Competições</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="competições.html#TBR">TBR</a>
-              <a href="competições.html#OBR">OBR</a>
-              <a href="competições.html#CCBB">CCBB</a>
-              <a href="competições.html#CYBERTOWN">CYBERTOWN</a>
-          </div>
-        </div>
+        
         <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Conquistas</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="conquistas.html#colocacoes">Colocações</a>
-              <a href="conquistas.html#ref">Referências</a>
+          <button class="dropdown-btn">Competições ▼</button>
+          <div class="dropdown-content">
+            <a href="#tbr">TBR</a>
+            <a href="#obr">OBR</a>
+            <a href="#ccbb">CCBB</a>
+            <a href="#cybertown">CYBERTOWN</a>
           </div>
         </div>
+        
         <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Projetos</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="projetos.html#TBR">TBR</a>
-              <a href="projetos.html#OBR">OBR</a>
-              <a href="projetos.html#MNR">MNR</a>
-              <a href="projetos.html#MARKETING">MARKETING</a>
+          <button class="dropdown-btn">Conquistas ▼</button>
+          <div class="dropdown-content">
+            <a href="#colocacoes">Colocações</a>
+            <a href="#referencias">Referências</a>
           </div>
         </div>
-    </nav>
-  </div>
-</header>
+        
+        <div class="dropdown">
+          <button class="dropdown-btn">Projetos ▼</button>
+          <div class="dropdown-content">
+            <a href="#projetos-tbr">TBR</a>
+            <a href="#projetos-obr">OBR</a>
+            <a href="#projetos-mnr">MNR</a>
+            <a href="#marketing">MARKETING</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <section class="hero">
       <div class="harpia-body">
@@ -60,40 +64,52 @@
           <h1>ROBOT ONE</h1>
           <p>CONHEÇA NOSSA EQUIPE</p>
           <div class="dots">
-              <span class="dot dot-active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+            <span class="dot dot-active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
         </div>
       </div>
+      
       <div class="socials">
-        <a href="https://www.instagram.com/therobot_one/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/@Robot_ONE"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="Facebook"></a>
-        <a href="https://www.tiktok.com/@robottone1?lang=en"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="Twitter"></a>
+        <a href="https://www.instagram.com/therobot_one/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/@Robot_ONE" target="_blank">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com/@robottone1?lang=en" target="_blank">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="TikTok">
+        </a>
       </div>
     </section>
+
     <section class="content" id="content">
       <div class="card-text">
         <h1>QUEM É A ROBOT ONE, E QUAL O NOSSO OBJETIVO COMO EQUIPE DE ROBÓTICA?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti? Laboriosam fuga impedit laborum, tenetur, corrupti asperiores culpa blanditiis minima excepturi quas, nostrum numquam delectus? At cum sequi natus delectus quidem praesentium ipsam laborum quos aspernatur. Fugit provident debitis officiis minima rerum dolorum iste, veritatis accusamus dolore voluptatibus corporis quasi illo sapiente nostrum praesentium eligendi, molestiae recusandae sequi fugiat in quis cupiditate? Rerum amet harum iure? Quod eum nulla distinctio saepe, sit, reiciendis accusamus consequatur magnam explicabo ut laboriosam? Tempore, tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti?</p>
       </div>
 
       <div class="card-text">
         <h1>QUAL O DIFERENCIAL DA ROBOT ONE?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti? Laboriosam fuga impedit laborum, tenetur, corrupti asperiores culpa blanditiis minima excepturi quas, nostrum numquam delectus? At cum sequi natus delectus quidem praesentium ipsam laborum quos aspernatur. Fugit provident debitis officiis minima rerum dolorum iste, veritatis accusamus dolore voluptatibus corporis quasi illo sapiente nostrum praesentium eligendi, molestiae recusandae sequi fugiat in quis cupiditate? Rerum amet harum iure? Quod eum nulla distinctio saepe, sit, reiciendis accusamus consequatur magnam explicabo ut laboriosam? Tempore, tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit.</p>
       </div>
 
-      <section id="intregantes">
+      <section id="integrantes">
         <div class="card-text">
           <h1>CONHEÇA NOSSOS INTEGRANTES</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione neque consectetur minus deleniti! Perspiciatis, distinctio esse ut cumque sed magni non! Impedit facere commodi sunt nam placeat exercitationem rem sapiente laborum earum nostrum eligendi, eius nesciunt recusandae consectetur necessitatibus maiores aspernatur cupiditate mollitia possimus facilis quisquam. Placeat ea doloremque dicta magnam, sapiente porro perferendis ipsa laudantium deserunt quos inventore nobis recusandae totam sint incidunt eos explicabo dolores sit nemo rem quae quibusdam reprehenderit! Autem qui voluptatibus totam tempora. Corrupti animi, eum dolorum, quia nihil atque asperiores tempore, incidunt voluptatibus necessitatibus quisquam officia? Nemo, accusamus possimus? Nostrum ab accusamus deserunt nam enim consectetur voluptatum magnam, dolor placeat labore similique a quis, inventore consequatur. A cum quae dicta iste adipisci odio, iure sapiente odit laudantium, quas molestiae ex in sequi nisi fugit voluptatem. Nostrum enim dolor, ab nulla sit amet consectetur maxime? Quaerat totam hic reprehenderit architecto numquam reiciendis inventore odit officia quo necessitatibus cum, labore quidem molestias cumque ipsam facere tenetur neque exercitationem quasi excepturi. Reiciendis magnam veritatis, praesentium iste ratione aliquid ipsam quam, odit, provident dicta quas dolor repellendus! Totam!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione neque consectetur minus deleniti! Perspiciatis, distinctio esse ut cumque sed magni non!</p>
         </div>
+        
         <div class="card-text">
           <h1>CONHEÇA NOSSOS TÉCNICOS</h1>
+          <p>Aqui você pode conhecer nossa equipe técnica especializada.</p>
         </div>
       </section>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

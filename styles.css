@@ -4,166 +4,31 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   height: 100%;
 }
 
-
-@font-face{
-  font-family: decalo;
-  src: url(fonts/decalotype.black.ttf);
-}
-
-@font-face{
-  font-family: extendapiupiu;
-  src: url(fonts/Gotham\ Bold.otf);
-}
-
-
 body {
-  font-family:'extendapiupiu';
-  background: linear-gradient(90deg, #5030E3, #306AE3, #A930E3, #E330C3);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #5030e3, #306ae3, #a930e3, #e330c3);
   color: white;
+  line-height: 1.6;
 }
 
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
-.logo img{
-  margin-top: 15px;
-  width: 200px;
-}
-
-
-
-/* Botão hamburguer (mobile) */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
   position: relative;
-  text-align: center;
-  padding: 100px 20px;
+  margin-bottom: -80px;
+  z-index: 1000;
 }
 
-.hero .bird {
-  position: absolute;
-  top: -385px;
-  left: -200px;
-  width: 1000px;
-}
-
-.hero-card {
-  background: rgba(0, 0, 0, 0.692);
-  border-radius: 30px;  
-  padding: 120px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
-
-.hero-text h1 {
-  font-family: "decalo";
-  font-size:  6rem;
-  padding-bottom: 12px;
-  color: white;
-  line-height: 1;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  color: #eee;
-}
-
-.card-text{
-  background: rgba(0, 0, 0, 0.692);
-  border-radius: 30px;  
-  padding: 30px 65px;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
-.card-text p{
-  font-size: 8;
-  margin-top: 20px;
-}
-
-.dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 20px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.dot-active {
-  opacity: 1;
-}
-
-
-.socials {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.socials img {
-  width: 20px;
-  height: 20px;
-  filter: invert(1);
-  transition: transform 0.2s;
-}
-
-.socials img:hover {
-  transform: scale(1.2);
-}
-
-
-
-::-webkit-scrollbar{
-  width: 5px;
-}
-::-webkit-scrollbar-track{
-  background-color: black;
-}
-
-::-webkit-scrollbar-thumb{
-  background: #ffffff;
-  border-radius: 20px;
-}
-.card-header{
-  background: rgba(0, 0, 0, 0.692);
-  border-radius: 30px;  
-  max-width: 1000px;
-  max-height: 50px;
-  margin: 0 auto;
-  margin-top: 10px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
 .navbar-card {
   background: #1a0032;
   border-radius: 50px;
@@ -173,134 +38,296 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  background: transparent;
-  position: relative;
-  margin-bottom: -80px;
-}
-.nav-links {
-  display: flex;
-  position: relative;
-  z-index: 20;
-}
-.nav-links a {
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #a74ff7;
-}
-
-
-.dropdown_menu{
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: #1a0032;
-}
-.dropdown_menu ul{
-  display: block;
-  margin: 10px;
-}
-.dropdown_menu ul li {
-  width: 150px;
+  cursor: pointer;
   padding: 10px;
 }
-li {
-  list-style-type: none;
-  padding-left: 0;
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+
 .dropdown {
   position: relative;
-  display: inline-block;
-  margin-right: 10px;
 }
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  color: #a74ff7;
+  background: rgba(167, 79, 247, 0.1);
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1a0032;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px black;
-  z-index: 1;
-  border-radius: 20px;
+  top: 100%;
+  left: 0;
+  background: #1a0032;
+  min-width: 180px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  margin-top: 5px;
 }
 
 .dropdown-content a {
-  color: rgb(255, 255, 255);
+  display: block;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  border-radius: 15px;
+  transition: all 0.3s ease;
 }
+
 .dropdown-content a:hover {
-  border-radius: 20px;
+  background: rgba(167, 79, 247, 0.2);
+  color: #a74ff7;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown.active .dropdown-content {
   display: block;
 }
-.dropdown button{
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: #1a0032;
-  color: white;
-  font-size: 20px;
-  font-family: "extendapiupiu";
-  border: none; /* remove borda */
-  background: none; /* opcional, remove bg se quiser */
-  outline: none; /* remove borda ao focar */
-  box-shadow: none;
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
 }
 
+.hero-card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  padding: 80px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #eee;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.dot-active {
+  opacity: 1;
+}
+
+.socials {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.socials a {
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+/* HERO BIRD */
+.hero .bird {
+  position: absolute;
+  top: -385px;
+  left: -200px;
+  width: 1000px;
+  z-index: 1;
+}
+
+/* CONTENT */
+.content {
+  padding: 40px 20px;
+}
+
+.card-text {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card-text p {
+  color: #eee;
+  line-height: 1.8;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .navbar-card {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 15px;
+    width: 90%;
   }
+
+.menu-toggle {
+  display: flex;
+  justify-content: flex-end; /* empurra o conteúdo interno para a direita */
+  margin-left: auto;          /* empurra o botão para a direita */
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 
   .nav-links {
     display: none;
     flex-direction: column;
+    gap: 0;
     width: 100%;
-    gap: 10px;
-    margin-top: 10px;
   }
 
   .nav-links.active {
     display: flex;
   }
-  .card-text{
-    margin: 10px;
-    margin-bottom: 20px;
+
+  .dropdown {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  .hero .bird {
-  position: absolute;
-  top: -75px;
-  left: -170px;
-  width: 500px;
+
+  .dropdown:last-child {
+    border-bottom: none;
   }
-  .hero-text h1{
-    font-size: 70px;
+
+  .dropdown-btn {
+    width: 100%;
+    text-align: left;
+    padding: 15px 10px;
+    font-size: 16px;
   }
-    .menu-toggle {
-    display: block;
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: rgba(26, 0, 50, 0.8);
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .dropdown-content a {
+    padding: 10px 20px;
+    border-radius: 0;
   }
 
   .hero-text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
-  .bird{
+
+  .hero-card {
+    padding: 60px 30px;
+  }
+
+  .card-text {
+    margin: 0 10px 20px 10px;
+    padding: 30px 25px;
+  }
+
+  .card-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero .bird {
+    position: absolute;
+    top: -75px;
+    left: -170px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-card {
+    padding: 40px 20px;
+  }
+
+  .card-text {
+    padding: 25px 20px;
+  }
+
+  .hero .bird {
     display: none;
   }
 }
