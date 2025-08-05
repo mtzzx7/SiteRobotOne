@@ -13,10 +13,19 @@ body {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Goti;
   background: linear-gradient(90deg, #5030e3, #306ae3, #a930e3, #e330c3);
   color: white;
   line-height: 1.6;
+}
+
+@font-face{
+  font-family: Titulos;
+  src: url(fonts/decalotype.black.ttf);
+}
+@font-face {
+  font-family: Goti;
+  src: url(fonts/Gotham\ Bold.otf);
 }
 
 /* NAVBAR */
@@ -126,6 +135,7 @@ body {
 }
 
 .hero-text h1 {
+  font-family: Titulos;
   font-size: 5rem;
   font-weight: bold;
   margin-bottom: 20px;
