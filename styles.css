@@ -223,6 +223,17 @@ body {
 .card-text p {
   color: #eee;
   line-height: 1.8;
+  margin-bottom: 20px;
+}
+.img-mnr{
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.img-cyber{
+  justify-content: center;
+  align-items: center;
+  width: 400px;
 }
 
 /* SCROLLBAR */
@@ -251,8 +262,8 @@ body {
 .menu-toggle {
   display: flex;
   justify-content: flex-end; /* empurra o conteúdo interno para a direita */
-  margin-left: auto;          /* empurra o botão para a direita */
-  margin-bottom: 10px;
+  margin-left: 0px;          /* empurra o botão para a direita */
+  margin-bottom: 0px;
   background: none;
   border: none;
   cursor: pointer;

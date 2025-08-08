@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,52 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robot One</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="navbar">
-  <div class="navbar-card">
-    <div class="logo">ROBOT ONE</div>
-    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
-    <nav class="nav-links">
+    <div class="navbar-card">
+      <!-- Botão hambúrguer -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      
+      <nav class="nav-links" id="navLinks">
         <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Sobre nós</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="index.html#content">Nossa história</a>
-              <a href="index.html#integrantes">Integrantes</a>
-              <a href="index.html#oficinas">Oficinas</a>
-              <a href="index.html#contato">Contato</a>
+          <button class="dropdown-btn">Sobre nós</button>
+          <div class="dropdown-content">
+            <a href="index.html#content">Nossa história</a>
+            <a href="index.html#integrantes">Integrantes</a>
+            <a href="#index.html#oficinas">Oficinas</a>
+            <a href="#index.html#contato">Contato</a>
           </div>
         </div>
+        
         <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Competições</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="competições.html#TBR">TBR</a>
-              <a href="competições.html#OBR">OBR</a>
-              <a href="competições.html#CCBB">CCBB</a>
-              <a href="competições.html#CYBERTOWN">CYBERTOWN</a>
+          <button class="dropdown-btn">Competições</button>
+          <div class="dropdown-content">
+            <a href="competições.html#tbr">TBR</a>
+            <a href="competições.html#obr">OBR</a>
+            <a href="competições.html#ccbb">CCBB</a>
+            <a href="competições.html#cybertown">CYBERTOWN</a>
+            <a href="competições.html#mnr">MNR</a>
           </div>
         </div>
+        
         <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Conquistas</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="conquistas.html#colocacoes">Colocações</a>
-              <a href="conquistas.html#ref">Referências</a>
+          <button class="dropdown-btn">Conquistas</button>
+          <div class="dropdown-content">
+            <a href="conquistas.html#colocações">Colocações</a>
+            <a href="conquistas.html#referencias">Referências</a>
           </div>
         </div>
+        
         <div class="dropdown">
-          <button onclick="toggleDropdown(event)">Projetos</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="projetos.html#TBR">TBR</a>
-              <a href="projetos.html#OBR">OBR</a>
-              <a href="projetos.html#MNR">MNR</a>
-              <a href="projetos.html#MARKETING">MARKETING</a>
+          <button class="dropdown-btn">Projetos</button>
+          <div class="dropdown-content">
+            <a href="projetos.html#projetos-tbr">TBR</a>
+            <a href="projetos.html#projetos-obr">OBR</a>
+            <a href="projetos.html#projetos-mnr">MNR</a>
+            <a href="projetos.html#marketing">MARKETING</a>
           </div>
         </div>
-    </nav>
-  </div>
-</header>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <section class="hero">
       <div class="harpia-body">
@@ -60,51 +63,52 @@
       <div class="hero-card">
         <div class="hero-text"> 
           <h1>ROBOT ONE</h1>
-          <p>NOSSAS PRINCIPAIS COMPETIÇÕES</p>
+          <p>CONHEÇA NOSSA EQUIPE</p>
           <div class="dots">
-              <span class="dot"></span>
-              <span class="dot dot-active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+            <span class="dot dot-active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
         </div>
       </div>
-      <div class="socials">
-        <a href="https://www.instagram.com/therobot_one/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/@Robot_ONE"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="Facebook"></a>
-        <a href="https://www.tiktok.com/@robottone1?lang=en"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="Twitter"></a>
-      </div>
     </section>
+
     <section class="content" id="content">
-        <section id="TBR">
-            <div class="card-text">
-                <h1>TBR</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti? Laboriosam fuga impedit laborum, tenetur, corrupti asperiores culpa blanditiis minima excepturi quas, nostrum numquam delectus? At cum sequi natus delectus quidem praesentium ipsam laborum quos aspernatur. Fugit provident debitis officiis minima rerum dolorum iste, veritatis accusamus dolore voluptatibus corporis quasi illo sapiente nostrum praesentium eligendi, molestiae recusandae sequi fugiat in quis cupiditate? Rerum amet harum iure? Quod eum nulla distinctio saepe, sit, reiciendis accusamus consequatur magnam explicabo ut laboriosam? Tempore, tempora?</p>
-            </div>
-        </section>
-
-        <section id="OBR">
-            <div class="card-text">
-                <h1>OBR</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti? Laboriosam fuga impedit laborum, tenetur, corrupti asperiores culpa blanditiis minima excepturi quas, nostrum numquam delectus? At cum sequi natus delectus quidem praesentium ipsam laborum quos aspernatur. Fugit provident debitis officiis minima rerum dolorum iste, veritatis accusamus dolore voluptatibus corporis quasi illo sapiente nostrum praesentium eligendi, molestiae recusandae sequi fugiat in quis cupiditate? Rerum amet harum iure? Quod eum nulla distinctio saepe, sit, reiciendis accusamus consequatur magnam explicabo ut laboriosam? Tempore, tempora?</p>
-            </div>
-        </section>
-
-        <section id="CCBB">
-            <div class="card-text">
-                <h1>CCBB</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti? Laboriosam fuga impedit laborum, tenetur, corrupti asperiores culpa blanditiis minima excepturi quas, nostrum numquam delectus? At cum sequi natus delectus quidem praesentium ipsam laborum quos aspernatur. Fugit provident debitis officiis minima rerum dolorum iste, veritatis accusamus dolore voluptatibus corporis quasi illo sapiente nostrum praesentium eligendi, molestiae recusandae sequi fugiat in quis cupiditate? Rerum amet harum iure? Quod eum nulla distinctio saepe, sit, reiciendis accusamus consequatur magnam explicabo ut laboriosam? Tempore, tempora?</p>
-            </div>
-        </section>
-
-        <section id="CYBERTOWN">
-            <div class="card-text">
-                <h1>CYBERTOWN</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti? Laboriosam fuga impedit laborum, tenetur, corrupti asperiores culpa blanditiis minima excepturi quas, nostrum numquam delectus? At cum sequi natus delectus quidem praesentium ipsam laborum quos aspernatur. Fugit provident debitis officiis minima rerum dolorum iste, veritatis accusamus dolore voluptatibus corporis quasi illo sapiente nostrum praesentium eligendi, molestiae recusandae sequi fugiat in quis cupiditate? Rerum amet harum iure? Quod eum nulla distinctio saepe, sit, reiciendis accusamus consequatur magnam explicabo ut laboriosam? Tempore, tempora?</p>
-            </div>
-        </section>
-
+      <section id="tbr">
+        <div class="card-text">
+          <h1>TBR</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti?</p>
+        </div>
+      </section>
+      <section id="obr">
+        <div class="card-text">
+          <h1>OBR</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti?</p>
+        </div>
+      </section>
+      <section id="ccbb">
+        <div class="card-text">
+          <h1>CCBB</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti?</p>
+        </div>
+      </section>
+      <section id="cybertown">
+        <div class="card-text">
+          <h1>CyberTown</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti?</p>
+          <img src="assets/CyberTown2024.jpg" alt="" class="img-cyber">
+        </div>
+      </section>
+      <section id="mnr">
+        <div class="card-text">
+          <h1>MNR</h1>
+          <p>A Mostra Nacional de Robótica é um dos maiores eventos de inovação e pesquisa em robótica educacional do Brasil, reunindo estudantes de todos os níveis para apresentar projetos em estandes e competir por prêmios e bolsas de Iniciação Científica Júnior (CNPq).</p>
+          <img src="assets/MNR2025.jpg" alt="" class="img-mnr">
+        </div>
+      </section>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
