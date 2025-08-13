@@ -181,7 +181,7 @@ h1, h2, h3, h4 {
   opacity: 0.4;
   transition: opacity 0.3s, box-shadow 0.3s, background 0.2s;
   cursor: pointer;
-  box-shadow: 0 0 0 2px #fff2, 0 0 8px #30e3c9aa;
+  box-shadow: 0 0 0 2px #fff2, 0 0 8px #000000aa;
   outline: none;
   border: none;
   display: inline-block;
@@ -193,13 +193,13 @@ h1, h2, h3, h4 {
 }
 
 .dot:focus {
-  outline: 2px solid #30e3c9;
+  outline: 2px solid #fdfdfd;
 }
 
 .dot-active {
   opacity: 1;
-  box-shadow: 0 0 0 3px #30e3c9, 0 0 12px #30e3c9cc;
-  background: #30e3c9;
+  box-shadow: 0 0 0 3px #9b30e3, 0 0 12px #42057acc;
+  background: #ffffff;
 }
 
 .socials {
@@ -457,7 +457,7 @@ h1, h2, h3, h4 {
 .card-equipe .valor {
     font-size: 2rem;
     margin-bottom: 4px;
-    color: #30e3c9;
+    color: #b70ece;
 }
 
 /* TIMELINE */
@@ -516,13 +516,13 @@ h1, h2, h3, h4 {
 .timeline ul li .point {
     min-width: 20px;
     height: 20px;
-    background-color: #30e3c9; /* Cor vibrante que combina com o gradiente do site */
+    background-color: #000000; /* Cor vibrante que combina com o gradiente do site */
     border-radius: 100%;
     z-index: 2;
     border: 3px #fff solid; /* Borda branca para destacar no fundo colorido */
     position: relative;
     left: 1px;
-    box-shadow: 0 0 8px #30e3c988;
+    box-shadow: 0 0 8px #4604b1;
 }
 .timeline ul li:nth-child(even) {
     flex-direction: row-reverse;
