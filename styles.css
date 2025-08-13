@@ -355,11 +355,14 @@ body {
 
 .container {
     padding: 20px 0;
+    margin-bottom: 10px;
 }
 
 .container h1 {
     text-align: center;
     font-size: 34px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .timeline {
@@ -380,7 +383,7 @@ body {
 .point {
     min-width: 20px;
     height: 20px;
-    background-color: #7700ff;
+    background-color: #470791;
     border-radius: 100%;
     z-index: 2;
     border: 3px #333333 solid;
@@ -396,6 +399,9 @@ body {
 
     html, body {
         font-size: 15px;
+    }
+    .timeline p {
+      display: none;
     }
 
 }
@@ -450,7 +456,7 @@ body {
 }
 
 .timeline ul li .date h4 {
-    background-color: #5030e3;
+    background-color: #000000bb;
     width: 100px;
     text-align: center;
     padding: 5px 10px;
@@ -459,7 +465,7 @@ body {
 
 .timeline ul li .content h3 {
     padding: 10px 20px;
-    background-color: #5030e3;
+    background-color: #02000ec2;
     margin-bottom: 0;
     text-align: center;
     border-top-left-radius: 10px;
@@ -491,3 +497,63 @@ body {
     left: 50%;
     background-color: #333333;
 }
+.container-card {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  gap: 20px;               /* Espaço entre os cards */
+  flex-wrap: wrap;         /* Permite quebrar linha se a tela for pequena */
+  min-height: 100vh;       /* Altura mínima para centralização vertical */
+}
+
+/* From Uiverse.io by bhaveshxrawat */ 
+.card {
+  width: 200px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  flex-direction: column;  /* Coloca um em cima do outro */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center;     /* Centraliza horizontalmente */
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.card p {
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  margin: 5px 0 0; /* Pequeno espaço acima */
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}
+
