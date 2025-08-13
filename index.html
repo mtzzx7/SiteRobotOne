@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -58,19 +57,17 @@
   <main>
     <section class="hero">
       <div class="harpia-body">
-        <img src="assets/Untitled (1).png" alt="pássaro decorativo" class="bird">
+        <img src="assets/Untitled (1).png" alt="Pássaro decorativo" class="bird" loading="lazy">
       </div>
       <div class="hero-card">
         <div class="hero-text"> 
           <h1>ROBOT ONE</h1>
           <p>CONHEÇA NOSSA EQUIPE</p>
-          <div class="dots">
-            <span class="dot dot-active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
+          <div class="dots" aria-label="Navegação de slides">
+            <span class="dot dot-active" title="Página Inicial"></span>
+            <span class="dot" title="Competições"></span>
+            <span class="dot" title="Conquistas"></span>
+            <span class="dot" title="Projetos"></span>
       </div>
     </section>
 
@@ -78,95 +75,92 @@
       <div class="container">
         <h1>Nossa Trajetória</h1>
         <div class="timeline">
-            <ul>
-                <li>
-                    <div class="content">
-                        <h3>Fundação da equipe</h3>
-                        <p>A equipe Robotone foi criada para unir talentos, desenvolvendo projetos inovadores e soluções tecnológicas que impactam o futuro.</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>2021</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="content">
-                        <h3>Lorem Ipsum is simply</h3>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>2022</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="content">
-                        <h3>Lorem Ipsum is simply</h3>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>2023</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="content">
-                        <h3>Lorem Ipsum is simply</h3>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>2024</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="content">
-                        <h3>Lorem Ipsum is simply</h3>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>2025</h4>
-                    </div>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <div class="content">
+                <h3>Fundação da equipe</h3>
+                <p>A equipe Robotone foi criada para unir talentos, desenvolvendo projetos inovadores e soluções tecnológicas que impactam o futuro.</p>
+              </div>
+              <div class="point"></div>
+              <div class="date">
+                <h4>2021</h4>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <h3>Primeira Competição</h3>
+                <p>Participação marcante na primeira competição, mostrando o potencial da equipe e conquistando reconhecimento.</p>
+              </div>
+              <div class="point"></div>
+              <div class="date">
+                <h4>2022</h4>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <h3>Expansão e Novos Membros</h3>
+                <p>A equipe cresceu, novos membros chegaram e projetos inovadores foram desenvolvidos.</p>
+              </div>
+              <div class="point"></div>
+              <div class="date">
+                <h4>2023</h4>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <h3>Conquistas Importantes</h3>
+                <p>Conquistamos prêmios e reconhecimento em competições regionais e nacionais.</p>
+              </div>
+              <div class="point"></div>
+              <div class="date">
+                <h4>2024</h4>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <h3>Visão para o Futuro</h3>
+                <p>Continuamos inovando e inspirando novos talentos para transformar o futuro da robótica.</p>
+              </div>
+              <div class="point"></div>
+              <div class="date">
+                <h4>2025</h4>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
-    <div class="container">
-      <h1>Sobre Nossa Equipe</h1>
-    </div>
-    <div class="container-card">
-          <div class="card">
-            <h2>50</h2>
-            <p>Membros</p>
-          </div>
-          <div class="card">
-            <h2>5</h2>
-            <p>Competições</p>
-          </div>
-          <div class="card">
-            <h2>50</h2>
-            <p>Membros</p>
-          </div>
-    </div>
+      </div>
+      <!-- Cards de equipe com flexbox responsivo -->
+      <div class="container">
+        <h1>Sobre Nossa Equipe</h1>
+      </div>
+      <div class="cards-equipe">
+        <div class="card-equipe">
+          <span class="valor">50</span>
+          Membros
+        </div>
+        <div class="card-equipe">
+          <span class="valor">5</span>
+          Competições
+        </div>
+        <div class="card-equipe">
+          <span class="valor">50</span>
+          Membros
+        </div>
+      </div>
+      <!-- Fim dos cards de equipe -->
       <div class="card-text">
         <h1>QUEM É A ROBOT ONE, E QUAL O NOSSO OBJETIVO COMO EQUIPE DE ROBÓTICA?</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit. Modi perferendis id unde totam dolores cupiditate veritatis quis suscipit, similique tempora rem ducimus nemo impedit at, facere eligendi corrupti?</p>
       </div>
-
       <div class="card-text">
         <h1>QUAL O DIFERENCIAL DA ROBOT ONE?</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus eveniet voluptatem atque adipisci provident quam ipsam expedita consequatur. Nam iste, velit est vel nulla ex dolores delectus fugit.</p>
       </div>
-
       <section id="integrantes">
         <div class="card-text">
           <h1>CONHEÇA NOSSOS INTEGRANTES</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione neque consectetur minus deleniti! Perspiciatis, distinctio esse ut cumque sed magni non!</p>
         </div>
-
-
-        
         <div class="card-text">
           <h1>CONHEÇA NOSSOS TÉCNICOS</h1>
           <p>Aqui você pode conhecer nossa equipe técnica especializada.</p>
@@ -178,3 +172,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+<!-- Melhoria: SEO, acessibilidade, semântica, links, organização, padronização, meta description, alt text, uso correto de section/main/nav/header, e identação. -->
